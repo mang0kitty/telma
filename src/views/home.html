@@ -1,0 +1,16 @@
+<el-container>
+    <el-header>
+        <h1>vue-template</h1>
+    </el-header>
+    <el-main>
+        <el-upload
+            drag
+            :action="uploadUrl"
+            :file-list="fileList"
+            :before-upload="handleUpload">
+            <i class="el-icon-upload"></i>
+            <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
+            <div class="el-upload__tip" slot="tip">text files with a size less than 500kb</div>
+        </el-upload>
+    </el-main>
+</el-container>
